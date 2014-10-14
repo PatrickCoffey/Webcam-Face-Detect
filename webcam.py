@@ -3,17 +3,18 @@
 import cv2
 import sys
 
+# Hard code the default Haar_cascade
 #cascPath = sys.argv[1]
 cascPath = "./haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
-
 video_capture = cv2.VideoCapture(0)
 
-counter = 1
+#set vals here for frome skip
 counterMax = 4
 
-counterMax = counter + 1
 
+counter = 1
+counterMax = counterMax + 1
 global face
 face = 0
 
